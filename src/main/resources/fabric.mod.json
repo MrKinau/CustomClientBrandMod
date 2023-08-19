@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "customclientbrand",
-  "version": "${version}",
+  "version": "1.0.0+1.20",
 
   "name": "Custom Client Brand",
   "description": "Sends a custom client brand!",
@@ -9,13 +9,14 @@
     "MrKinau"
   ],
   "contact": {
-    "homepage": "https://kinau.dev/"
+    "homepage": "https://github.com/MrKinau/CustomClientBrandMod",
+    "repo": "https://github.com/MrKinau/CustomClientBrandMod"
   },
 
   "license": "CC0-1.0",
   "icon": "assets/customclientbrand/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "dev.kinau.customclientbrand.CustomClientBrand"
@@ -31,9 +32,7 @@
   "depends": {
     "fabricloader": ">=0.14.21",
     "fabric-api": "*",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "java": ">=17",
+    "cloth-config": ">=11.0.99"
   }
 }
