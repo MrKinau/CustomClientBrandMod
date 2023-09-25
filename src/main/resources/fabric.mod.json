@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "customclientbrand",
-  "version": "1.0.0+1.20",
+  "version": "1.0.0+1.20.2",
 
   "name": "Custom Client Brand",
   "description": "Sends a custom client brand!",
