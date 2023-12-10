@@ -13,6 +13,5 @@ public class CustomClientBrand implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		AutoConfig.register(CCBConfig.class, GsonConfigSerializer::new);
-		LOGGER.info("initialized!");
 	}
 }
