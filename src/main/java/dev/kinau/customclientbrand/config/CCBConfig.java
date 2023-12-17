@@ -10,6 +10,6 @@ import me.shedaniel.autoconfig.annotation.Config;
 @Getter
 public class CCBConfig implements ConfigData {
 
-    private String customBrand;
+    private String customBrand = "fabric";
 
 }
