@@ -16,8 +16,10 @@ public class CCBMixin {
 	@Inject(method = "write(Lnet/minecraft/network/FriendlyByteBuf;)V", at = @At(value = "HEAD"), cancellable = true)
 	public void changeClientBrand(FriendlyByteBuf buf, CallbackInfo ci) {
 		if (((ServerboundCustomPayloadPacket)(Object)this).payload().id() == BrandPayload.ID) {
+			String customBrand = AutoConfig.getConfigHolder(CCBConfig.class).get().customBrand();
+			if (customBrand == null || customBrand.isEmpty()) return;
 			buf.writeResourceLocation(BrandPayload.ID);
-			buf.writeUtf(AutoConfig.getConfigHolder(CCBConfig.class).get().customBrand());
+			buf.writeUtf(customBrand);
 			ci.cancel();
 		}
 	}
