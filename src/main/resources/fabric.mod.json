@@ -30,7 +30,6 @@
   ],
   "depends": {
     "fabricloader": ">=0.14.22",
-    "fabric-api": "*",
     "java": ">=17",
     "cloth-config": ">=12.0.108"
   }
